@@ -1,0 +1,6 @@
+{
+  "name": "Rope Cut",
+  "description": "Physics puzzle game where you cut ropes to guide suspended objects into target zones.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

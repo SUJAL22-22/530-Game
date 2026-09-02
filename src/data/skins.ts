@@ -1,0 +1,88 @@
+import { Skin } from '../types';
+
+export const SKINS: Skin[] = [
+  {
+    id: 'candy',
+    name: 'Striped Candy',
+    emoji: '🍬',
+    primaryColor: '#ef4444',
+    secondaryColor: '#ffffff',
+    unlockStars: 0,
+    description: 'The delicious classic spiral candy',
+    trailColor: '#f87171',
+  },
+  {
+    id: 'star_ball',
+    name: 'Cosmic Gem',
+    emoji: '⭐',
+    primaryColor: '#fbbf24',
+    secondaryColor: '#f59e0b',
+    unlockStars: 0,
+    description: 'A radiant golden power star',
+    trailColor: '#fde047',
+  },
+  {
+    id: 'ruby',
+    name: 'Royal Ruby',
+    emoji: '💎',
+    primaryColor: '#ec4899',
+    secondaryColor: '#be185d',
+    unlockStars: 10,
+    description: 'Polished gemstone with sharp facets',
+    trailColor: '#f472b6',
+  },
+  {
+    id: 'watermelon',
+    name: 'Juicy Melon',
+    emoji: '🍉',
+    primaryColor: '#22c55e',
+    secondaryColor: '#ef4444',
+    unlockStars: 20,
+    description: 'Fresh summer fruit with tasty seeds',
+    trailColor: '#4ade80',
+  },
+  {
+    id: 'eight_ball',
+    name: 'Magic 8-Ball',
+    emoji: '🎱',
+    primaryColor: '#1e293b',
+    secondaryColor: '#f8fafc',
+    unlockStars: 35,
+    description: 'Mysterious fortune telling sphere',
+    trailColor: '#94a3b8',
+  },
+  {
+    id: 'beach_ball',
+    name: 'Beach Ball',
+    emoji: '🏖️',
+    primaryColor: '#06b6d4',
+    secondaryColor: '#facc15',
+    unlockStars: 50,
+    description: 'Inflatable summer beach toy',
+    trailColor: '#38bdf8',
+  },
+  {
+    id: 'planet',
+    name: 'Earth Orb',
+    emoji: '🌍',
+    primaryColor: '#3b82f6',
+    secondaryColor: '#10b981',
+    unlockStars: 65,
+    description: 'Miniature blue planet with green continents',
+    trailColor: '#60a5fa',
+  },
+  {
+    id: 'donut',
+    name: 'Glazed Donut',
+    emoji: '🍩',
+    primaryColor: '#d97706',
+    secondaryColor: '#f43f5e',
+    unlockStars: 75,
+    description: 'Sweet donut with strawberry frosting and sprinkles',
+    trailColor: '#fb7185',
+  },
+];
+
+export const getSkinById = (id: string): Skin => {
+  return SKINS.find((s) => s.id === id) || SKINS[0];
+};
